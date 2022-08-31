@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+.generalcontainer {
+    width: 100%;
+}
+
+.section1 {
+    width: 40%;
+    position: relative;
+    height: 100vh;
+    background: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-size: cover;
+}
+
+.section2 {
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.flex3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    left: 8rem;
+
+}
+
+.flex-letter {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.image1 {
+    width: 90%;
+    position: absolute;
+    top: 7rem;
+    right: -9rem;
+}
+
+.hidden {
+    width: 100%;
+    display: none;
+}
+
+.image5 {
+    position: absolute;
+    display: none;
+}
+
+
+p {
+    display: block;
+    font-size: 12px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    line-height: 1.7;
+    width: 35%;
+    position: relative;
+}
+
+.wrapper {
+    width: 35%;
+    display: none;
+}
+
+.pop-up-content>h2 {
+    text-align: center;
+    margin: 17px 0;
+    letter-spacing: 2px;
+}
+
+.pop-up-content>p {
+    text-align: center;
+    margin-bottom: 17px;
+
+}
+
+.pop-up-content>img {
+    width: 55px;
+    margin: auto;
+    display: block;
+}
+
+.err-msg1 {
+    position: absolute;
+    display: none;
+    font-size: 11px;
+    color: rgba(241, 59, 59, 0.877);
+    font-weight: 700;
+    top: 3.5rem;
+    left: 5px;
+}
+
+.err-msg2 {
+    position: absolute;
+    display: none;
+    font-size: 11px;
+    color: rgba(241, 59, 59, 0.877);
+    font-weight: 700;
+    top: 8.5rem;
+    left: 5px;
+}
+
+.err-msg3 {
+    position: absolute;
+    display: none;
+    font-size: 11px;
+    color: rgba(241, 59, 59, 0.877);
+    font-weight: 700;
+    top: 13.5rem;
+    left: 5px;
+}
+
+.err-msg4 {
+    position: absolute;
+    display: none;
+    font-size: 11px;
+    color: rgba(241, 59, 59, 0.877);
+    left: 1rem;
+    font-weight: 700;
+    top: 13.5rem;
+    left: 10rem;
+}
+
+.input {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 10px 5px 8px 6px;
+    border-radius: 6px;
+    border: 1px solid hsl(270, 3%, 87%);
+    outline: none;
+}
+
+.input2 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 10px 5px 15px 6px;
+    border-radius: 6px;
+    border: 1px solid hsl(270, 3%, 87%);
+    outline: none;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:960px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .section1 {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+        width: 100%;
+    }
+
+    .image2 {
+        width: 100%;
+    }
+
+    .image5 {
+        display: block;
+        width: 60%;
+        top: 17rem;
+        left: 2rem;
+    }
+
+    .form,
+    .wrapper {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:753px) {
+    .image5 {
+        top: 12rem;
+    }
+}
+
+@media screen and (max-width:577px) {
+
+    .form,
+    .wrapper {
+        width: 100%;
+    }
+
+    .image5 {
+        top: 3rem;
+        width: 90%;
+        left: 1rem;
+    }
+}
+
+@media screen and (max-width:472px) {
+    .section2 {
+        width: 85%;
+    }
+
+    .image5 {
+        top: 3rem;
+        width: 90%;
+        left: 1rem;
+    }
+}

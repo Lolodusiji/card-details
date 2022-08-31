@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="generalcontainer">
+        <div class="flex">
+            <div class="hidden">
+                <img class="image2" src="./interactive-card-details-form-main/images/bg-main-mobile.png">
+                <img class="image5" src="./interactive-card-details-form-main/images/card-mobile.svg">
+            </div>
+            <div class="section1">
+                <img class="image1"
+                    src="./interactive-card-details-form-main/images/card.svg">
+            </div>
+            <div class="section2">
+                <div class="text">
+                    <form class="form">
+                        <p>CARDHOLDER NAME</p>
+                        <input class="input name-inpt" type="text" placeholder="e.g. Jane Appleseed">
+                        <p class="err-msg1">cant be blank</p>
+                        <P>CARD NUMBER</P>
+                        <input class="input card-inpt" type="text" placeholder="e.g. 1234 5678 9123 0000">
+                        <p class="err-msg2">wrong format,numbers only</p>
+                        <div class="flex-letter">
+                            <p>EXP.DATE [MM/YY]</p>
+                            <p>CVC</p>
+                        </div>
+                        <div class="flex2">
+                            <input class="input date-inpt" type="month/year" placeholder="MM/YY">
+                            <p class="err-msg3">cant be blank</p>
+                            <input class="input cvc-inpt" type="text" placeholder="e.g. 123">
+                            <p class="err-msg4">cant be blank</p>
+                        </div>
+                        <input class="input2" type="submit" value="Confirm">
+                    </form>
+                    <div class="wrapper">
+                        <div class="pop-up">
+                            <div class="pop-up-content">
+                                <img src="./interactive-card-details-form-main/images/icon-complete.svg">
+                                <h2>THANK YOU!</h2>
+                                <P>we have added your card details</P>
+                                <button class="input2">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
